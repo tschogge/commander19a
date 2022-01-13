@@ -1,4 +1,3 @@
-public class Main{
-
-//Test Change : Lars t.H
+public class Main {
+  // alles voll errors :(
 }
