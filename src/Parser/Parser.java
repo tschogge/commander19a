@@ -9,6 +9,8 @@ import java.util.List;
 
 public class Parser {
 
+
+
     public boolean checkEntity(String entityString) {
 
         return !entityString.equals("");

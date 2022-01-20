@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.*;
 
+
+
 class ParserTest {
     Parser parser = new Parser();
 
@@ -47,5 +49,17 @@ class ParserTest {
 
     @Test
     void parseParameter() {
+
+        //Test 1
+
+        String testStringForParameter = "dir test please";
+        String[] expectedArray = {"test", "please"};
+
+        assertArrayEquals(expectedArray, parser.parseParameter(testStringForParameter).toArray());
+
+        //Test 2
+        testStringForParameter = "dir thank you";
+        String[] expectedArrayOut = {"thank", "you"};
+        assertArrayEquals(expectedArrayOut, parser.parseParameter(testStringForParameter).toArray());
     }
 }
