@@ -1,4 +1,4 @@
 package Console;
 
-public class ConsoleOutputWriter {
+public class ConsoleOutputWriter implements OutputWriter{
 }

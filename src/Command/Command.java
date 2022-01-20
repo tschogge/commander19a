@@ -1,4 +1,4 @@
 package Command;
 
-public class Command {
+public abstract class Command {
 }
