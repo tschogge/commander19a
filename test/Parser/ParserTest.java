@@ -2,21 +2,45 @@ package Parser;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 class ParserTest {
+    Parser parser = new Parser();
 
-    @org.junit.jupiter.api.Test
+    @Test
     void checkEntity() {
+        //Test false
+        String testStringForCheck = "";
+        assertFalse(parser.checkEntity(testStringForCheck));
+
+        //Test true
+        testStringForCheck = "dir";
+        assertTrue(parser.checkEntity(testStringForCheck));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void parseWhole() {
+        //Test 1
+        String testStringForParseWhole = "dir test";
+        String[] expectedArray = {"dir", "test"};
+        assertArrayEquals(expectedArray, parser.parseWhole(testStringForParseWhole).toArray());
+
+        //Test 2
+        testStringForParseWhole = "rm dir test";
+        expectedArray = new String[]{"rm", "dir", "test"};
+        assertArrayEquals(expectedArray, parser.parseWhole(testStringForParseWhole).toArray());
+
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void commandOnly() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void parseParameter() {
     }
 }
