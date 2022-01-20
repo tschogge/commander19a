@@ -9,6 +9,7 @@ public class CommandInvoker {
     private Command command;
     private Parser parser;
     // manipulate this variable in the exit command class
+
     public boolean again = true;
 
     public CommandInvoker(String userInput) {
