@@ -27,8 +27,9 @@ public class Parser {
 
     public String commandOnly(String entityString){
 
-
-        return parseWhole(entityString)[0];
+        String temp = parseWhole(entityString)[0];
+        temp.toLowerCase();
+        return temp;
     }
 
     public String[] parseParameter(String entityString){

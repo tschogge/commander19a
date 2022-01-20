@@ -4,13 +4,13 @@ public class Console {
 
     public String readInput(){
         Scanner scanner = new Scanner(System.in);
-        String hallo = scanner.nextLine();
-        System.out.println(hallo);
-        return hallo;
+        String userIput = scanner.nextLine();
+        return userIput;
     }
 
     public void start(){
-        readInput();
+        CommandInvoker commandInvoker = new CommandInvoker(readInput());
+        commandInvoker.executeCommand();
     }
 
     public void exit(){
