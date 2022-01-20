@@ -34,6 +34,7 @@ class ParserTest {
 
     @Test
     void commandOnly() {
+
     }
 
     @Test
