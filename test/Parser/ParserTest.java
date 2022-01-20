@@ -4,10 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 class ParserTest {
     Parser parser = new Parser();
 
