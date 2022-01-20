@@ -34,7 +34,15 @@ class ParserTest {
 
     @Test
     void commandOnly() {
+        //Test 1
+        String testStringForCommand = "dir test";
+        String expectedOutput = "dir";
+        assertEquals(expectedOutput, parser.commandOnly(testStringForCommand));
 
+        //Test 2
+        testStringForCommand = "rm test -e";
+        expectedOutput = "rm";
+        assertEquals(expectedOutput, parser.commandOnly(testStringForCommand));
     }
 
     @Test

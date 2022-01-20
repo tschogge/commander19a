@@ -2,7 +2,7 @@ package Console;
 import java.util.Scanner;
 public class Console {
 
-
+//
 
     public String readInput(){
         Scanner scanner = new Scanner(System.in);
