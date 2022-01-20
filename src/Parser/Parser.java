@@ -11,33 +11,19 @@ public class Parser {
     private String entryString;
 
 
+    public boolean checkEntity(String entityString) {
 
-
-
-
-
-
-    public boolean checkEntity(String entityString){
-
-
-        if (!entityString.equals("")){
-
-        return true;
-
-        }
-
-
-        return false;
+        return !entityString.equals("");
     }
 
-    public String[] parseCommand(String entityString){
+    public String[] parseCommand(String entityString) {
 
-        if(checkEntity(entityString)){
+        if (checkEntity(entityString)) {
 
-            return  entityString.split("\\s+");
+            return entityString.split("\\s+");
 
         }
-            return null;
+        return null;
 
     }
 
