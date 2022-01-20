@@ -14,7 +14,7 @@ public class Parser {
         return !entityString.equals("");
     }
 
-    public List<String> parseWhole(String entityString) {
+    public ArrayList<String> parseWhole(String entityString) {
         if (checkEntity(entityString)) {
             return new ArrayList<String>(List.of(entityString.split("\\s+")));
         }
@@ -22,11 +22,11 @@ public class Parser {
     }
 
     public String commandOnly(String entityString) {
-        return parseWhole(entityString).get(0);
+        return parseWhole(entityString).get(0).toLowerCase();
     }
 
-    public List<String> parseParameter(String entityString) {
-        List<String> transferString = parseWhole(entityString);
+    public ArrayList<String> parseParameter(String entityString) {
+        ArrayList<String> transferString = parseWhole(entityString);
         transferString.remove(0);
 
         return transferString;
