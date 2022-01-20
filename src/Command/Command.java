@@ -8,6 +8,7 @@ public abstract class Command {
     protected ArrayList<String> parameters;
     protected OutputWriter outputWriter;
 
+    public Command() {}
     public void execute() {
 
     }

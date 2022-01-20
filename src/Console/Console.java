@@ -1,4 +1,6 @@
 package Console;
+import Command.ExitCommand;
+
 import java.util.Scanner;
 public class Console {
 
@@ -15,7 +17,7 @@ public class Console {
         do {
             commandInvoker = new CommandInvoker(readInput());
             commandInvoker.executeCommand();
-        } while (commandInvoker.again);
+        } while (ExitCommand.again);
     }
 
     public void exit(){
