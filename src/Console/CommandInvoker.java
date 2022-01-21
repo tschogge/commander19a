@@ -23,6 +23,7 @@ public class CommandInvoker {
         command = CommandFactory.createCommand(parser.commandOnly(userInput));
         if (!parser.enoughArguments(userInput)) {
             System.out.println("This Command requires at least " + command.getRequiredArguments() + " Parameters.");
+            canExecute = false;
             return;
         }
 
