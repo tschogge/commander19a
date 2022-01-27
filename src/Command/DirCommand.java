@@ -3,7 +3,7 @@ package Command;
 import java.io.File;
 
 public class DirCommand extends Command {
-    public void Exit() {
+    public void DirCommand() {
 
     }
 
