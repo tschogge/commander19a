@@ -14,13 +14,14 @@ public class CommandFactory {
             case "ver":
                 command = new VerCommand();
                 break;
-            case "set color":
-                command = new SetColorCommand();
+            case "color":
+                command = new ColorCommand();
                 break;
             case "dir":
                 command = new DirCommand();
                 break;
-            case "type": new TypeCommand();
+            case "type":
+                command = new TypeCommand();
         }
 
         return command;
