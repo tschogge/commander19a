@@ -1,7 +1,5 @@
 package Command;
 
-
-
 public class ClsCommand extends Command{
 
     public static int requiredArguments = 0;
