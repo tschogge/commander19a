@@ -15,11 +15,13 @@ public class Console {
         }
         System.out.println(outputString);
     }
-    public void printAndSavePath() {
+    public void printPath() {
+        System.out.print(Command.getCurrentPath() + ">");
+
+    }
+    public void managePathInit() {
         String currentPath = System.getProperty("user.dir");
         Command.currentPath = currentPath;
-        System.out.print(System.getProperty("user.dir") + ">");
-
     }
     public String readInput(){
         Scanner scanner = new Scanner(System.in);
@@ -28,10 +30,11 @@ public class Console {
     }
 
     public void start(){
+        managePathInit();
         printStartSpaces();
         CommandInvoker commandInvoker;
         do {
-            printAndSavePath();
+            printPath();
             commandInvoker = new CommandInvoker(readInput());
             commandInvoker.executeCommand();
         } while (ExitCommand.again);

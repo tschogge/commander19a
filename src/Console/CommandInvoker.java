@@ -36,7 +36,7 @@ public class CommandInvoker {
         if (!canExecute) {
             return;
         }
-        // call output writer if not validatet correctly (parser)
+
 
         // is ok
         command.execute();
