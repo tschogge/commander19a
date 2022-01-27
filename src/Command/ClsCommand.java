@@ -14,7 +14,7 @@ public class ClsCommand extends Command{
         for (int i = 0; i < 25; i++) {
             outputString+= "\r\n";
         }
-        System.out.println(outputString);
+        outputWriter.println(outputString);
     }
     @Override
     public int getRequiredArguments() {

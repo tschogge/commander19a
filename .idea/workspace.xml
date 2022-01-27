@@ -3,18 +3,38 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="30e30b78-eea5-4b67-a9b2-d1c88c456e11" name="Changes" comment="readInput">
+    <list default="true" id="e96de598-9d76-4d59-af34-e2741739d551" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_07__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_35__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/ClsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/ClsCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/ExitCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/ExitCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/SetColorCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/TypeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/TypeCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/commander19/Parser/ParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/commander19/Parser/ParserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/ClsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ClsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/TypeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/TypeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/CommandInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/CommandInvoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/ConsoleOutputWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/ConsoleOutputWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/OutputWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/OutputWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,9 +130,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="readInput" />
     <option name="LAST_COMMIT_MESSAGE" value="readInput" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="660" y="167" key="#com.intellij.ide.util.MemberChooser" timestamp="1643289647857">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="660" y="167" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1643289647857" />
+    <state width="1664" height="178" key="GridCell.Tab.0.bottom" timestamp="1643290329383">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="178" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1643290329383" />
+    <state width="1664" height="178" key="GridCell.Tab.0.center" timestamp="1643290329383">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="178" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1643290329383" />
+    <state width="1664" height="178" key="GridCell.Tab.0.left" timestamp="1643290329383">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="178" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1643290329383" />
+    <state width="1664" height="178" key="GridCell.Tab.0.right" timestamp="1643290329383">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="178" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1643290329383" />
   </component>
 </project>
