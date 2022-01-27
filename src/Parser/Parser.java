@@ -14,11 +14,18 @@ import java.util.List;
 
 public class Parser {
 
+
+
+    public boolean checkEntity(String entityString) {
+
+        return !entityString.equals("");
+
     public boolean commandFound(String entitiyString) {
         if (CommandFactory.createCommand(commandOnly(entitiyString)) == null) {
             return false;
         }
         return true;
+
     }
     public boolean enoughArguments(String entityString) {
         // Für jeden Command die required anzahl argumente hinzufügen
