@@ -11,6 +11,9 @@ public class CommandInvoker {
     private Command command;
     private Parser parser;
     private boolean canExecute;
+    // manipulate this variable in the exit command class
+
+    public boolean again = true;
 
     public CommandInvoker(String userInput) {
         parser = new Parser();
