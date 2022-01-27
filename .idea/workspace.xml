@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="58cd08ac-f044-4f89-b1e7-d915fa77d91e" name="Changes" comment="readInput">
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Console/CommandInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Console/CommandInvoker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Console/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Console/Console.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Parser/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ExitCommand.java" afterDir="false" />
+    <list default="true" id="30e30b78-eea5-4b67-a9b2-d1c88c456e11" name="Changes" comment="readInput">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_07__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_35__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/ClsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/ClsCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/ExitCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/ExitCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/SetColorCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/TypeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/TypeCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/commander19/Parser/ParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/commander19/Parser/ParserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/ClsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ClsCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +27,7 @@
   <component name="ProjectId" id="23eAo9D0lUM3Xk4GGrOGWLJjhXo" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,6 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
@@ -100,7 +110,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="readInput" />
