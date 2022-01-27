@@ -9,12 +9,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_35__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/ClsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/ClsCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/ExitCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/ExitCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/SetColorCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/TypeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/TypeCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/commander19/Parser/ParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/commander19/Parser/ParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/ClsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ClsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/CommandFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/CommandFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Console/CommandInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Console/CommandInvoker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Console/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Console/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Parser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/DirCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/DirCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +102,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -110,6 +113,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="readInput" />
