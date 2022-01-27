@@ -4,10 +4,13 @@ import Command.Command;
 import Command.CommandFactory;
 import Parser.Parser;
 
+import java.util.ArrayList;
+
 public class CommandInvoker {
 
     private Command command;
     private Parser parser;
+    private boolean canExecute;
     // manipulate this variable in the exit command class
 
     public boolean again = true;
@@ -15,15 +18,30 @@ public class CommandInvoker {
     public CommandInvoker(String userInput) {
         parser = new Parser();
         // validate
-
-        // is ok
+        if (!parser.commandFound(userInput)) {
+            System.out.println("This Command doesn't exist!");
+            canExecute = false;
+            return;
+        }
         command = CommandFactory.createCommand(parser.commandOnly(userInput));
-        command.setParameters(parser.parseParameter(userInput));
+        if (!parser.enoughArguments(userInput)) {
+            System.out.println("This Command requires at least " + command.getRequiredArguments() + " Parameters.");
+            canExecute = false;
+            return;
+        }
 
+        canExecute = true;
+        // is ok
+        command.setParameters(parser.parseParameter(userInput));
 
     }
     public void executeCommand() {
-        // call output writer if not validatet correctly (parser)
+        if (!canExecute) {
+            return;
+        }
 
+
+        // is ok
+        command.execute();
     }
 }
