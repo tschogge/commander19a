@@ -1,13 +1,20 @@
 package Console;
 import Command.Command;
 import Command.ExitCommand;
+import Filesystem.Drive;
+import Filesystem.Filesystem;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Console {
     private OutputWriter outputWriter;
+    private Filesystem filesystem;
+    private Drive currentDrive;
 
     public Console() {
         outputWriter = new ConsoleOutputWriter();
+        filesystem = new Filesystem();
+        currentDrive = filesystem.getMainDrive();
     }
     public void printStartSpaces() {
         // Da man die Konsole nicht mit einem Command löschen kann muss man dies mit "New Lines" simulieren (siehe clsCommand-Klasse)
@@ -22,8 +29,7 @@ public class Console {
         outputWriter.print(Command.getCurrentPath() + ">");
     }
     public void managePathInit() {
-        String currentPath = System.getProperty("user.dir");
-        Command.currentPath = currentPath;
+        Command.currentPath = currentDrive.getRootDirectory().getPath() + currentDrive.getRootDirectory().getName();
     }
     public String readInput(){
         Scanner scanner = new Scanner(System.in);
@@ -42,8 +48,12 @@ public class Console {
         } while (ExitCommand.again);
     }
 
-    public void exit(){
 
+    public OutputWriter getOutputWriter() {
+        return outputWriter;
     }
 
+    public void setOutputWriter(OutputWriter outputWriter) {
+        this.outputWriter = outputWriter;
+    }
 }
