@@ -7,9 +7,8 @@ package Command;
 public class ColorCommand extends Command {
     public static int requiredArguments = 1;
 
-
     /**
-     * ANSI Code
+     * ANSI Code Farben
      * ANSI wird von der InteliJ Console unterstützt
      */
 
