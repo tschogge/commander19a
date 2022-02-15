@@ -7,7 +7,9 @@ import java.io.IOException;
 public class TypeCommand extends Command {
 
     public static int requiredArguments = 1;
-
+    private String path;
+    public TypeCommand() {
+    }
     @Override
     public void execute() {
         String path = Command.currentPath + "\\" +parameters.get(0);
