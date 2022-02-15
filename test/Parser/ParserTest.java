@@ -64,4 +64,35 @@ class ParserTest {
         String[] expectedArrayOut = {"thank", "you"};
         assertArrayEquals(expectedArrayOut, parser.parseParameter(testStringForParameter).toArray());
     }
+
+    @Test
+    void commandOnlySensitiveTest(){
+
+        //Test 1
+        String testStringForCommand = "dir test";
+        String expectedOutput = "dir";
+        assertEquals(expectedOutput, parser.commandOnly(testStringForCommand));
+
+        //Test 2
+        testStringForCommand = "RM test -e";
+        expectedOutput = "rm";
+        assertEquals(expectedOutput, parser.commandOnly(testStringForCommand));
+
+    }
+
+
+    @Test
+    void parameterSensitiveTest(){
+        //Test 1
+
+        String testStringForParameter = "dir test please";
+        String[] expectedArray = {"test", "please"};
+
+        assertArrayEquals(expectedArray, parser.parseParameter(testStringForParameter).toArray());
+
+        //Test 2
+        testStringForParameter = "DIR Thank you";
+        String[] expectedArrayOut = {"Thank", "you"};
+        assertArrayEquals(expectedArrayOut, parser.parseParameter(testStringForParameter).toArray());
+    }
 }
