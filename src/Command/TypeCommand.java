@@ -1,5 +1,9 @@
 package Command;
 
+import Filesystem.Directory;
+import Filesystem.File;
+import Filesystem.FilesystemItem;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,20 +11,25 @@ import java.io.IOException;
 public class TypeCommand extends Command {
 
     public static int requiredArguments = 1;
-    private String path;
+
     public TypeCommand() {
     }
     @Override
     public void execute() {
-        String path = Command.currentPath + "\\" +parameters.get(0);
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                outputWriter.println(line);
+        String output = "";
+        File file = null;
+        for (FilesystemItem filesystemItem: Command.console.getCurrentDrive().getCurrentDirectory().getFilesystemItems()) {
+            if (filesystemItem instanceof File && filesystemItem.getName().equals(parameters.get(0))) {
+                file = (File) filesystemItem;
             }
-        } catch (IOException e) {
-            outputWriter.println("File \"" +  path + "\" not found!");
+
         }
+        if (file == null) {
+            outputWriter.println("The File \"" + currentPath  + parameters.get(0) + "\" doesn't exist!");
+            return;
+        }
+        outputWriter.println(file.getContent());
+        outputWriter.println(output);
     }
     @Override
     public int getRequiredArguments() {

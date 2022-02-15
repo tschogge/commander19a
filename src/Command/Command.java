@@ -1,13 +1,17 @@
 package Command;
 
+import Console.Console;
 import Console.OutputWriter;
-
+import Filesystem.Filesystem;
+import Filesystem.Directory;
+import Filesystem.Drive;
 import java.util.ArrayList;
 
 public abstract class Command {
     protected ArrayList<String> parameters;
     protected OutputWriter outputWriter;
     public static String currentPath;
+    public static Console console;
 
     public Command() {}
     public void execute() {
