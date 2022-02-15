@@ -1,5 +1,7 @@
 package Command;
 
+import Console.OutputWriter;
+import Console.TestOutputWriter;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -26,9 +28,12 @@ public class VerCommandTest {
 
     @Test
     void displayAll() {
+        OutputWriter outputWriterTest = new TestOutputWriter();
+        verCommand.setOutputWriter(outputWriterTest);
         verCommand.execute();
+        TestOutputWriter outputWriter = (TestOutputWriter) verCommand.getOutputWriter();
         assertEquals("System is running on:  " + System.getProperty("os.name") + " " + System.getProperty("os.arch") + "\n" +
                 "Application-Version: " + verCommand.getCurrentGeneralVersion() + " " + verCommand.getVersionNumber() + "\n" +
-                "Benutzer: " + System.getProperty("user.name"), verCommand.outputWriter.toString());
+                "Benutzer: " + System.getProperty("user.name"), outputWriter.output);
     }
 }

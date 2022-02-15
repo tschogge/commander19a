@@ -2,7 +2,7 @@ package Console;
 
 import org.junit.jupiter.api.*;
 
-public class TestOutputWriter {
+public class TestOutputWriter implements OutputWriter{
     public String output;
 
     public TestOutputWriter() {
