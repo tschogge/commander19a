@@ -14,10 +14,10 @@ public class TypeCommand extends Command {
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = br.readLine()) != null) {
-                System.out.println(line);
+                outputWriter.println(line);
             }
         } catch (IOException e) {
-            System.out.println("File \"" +  path + "\" not found!");
+            outputWriter.println("File \"" +  path + "\" not found!");
         }
     }
     @Override

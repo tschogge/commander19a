@@ -4,8 +4,11 @@ import Command.ExitCommand;
 
 import java.util.Scanner;
 public class Console {
+    private OutputWriter outputWriter;
 
-
+    public Console() {
+        outputWriter = new ConsoleOutputWriter();
+    }
     public void printStartSpaces() {
         // Da man die Konsole nicht mit einem Command löschen kann muss man dies mit "New Lines" simulieren (siehe clsCommand-Klasse)
         // Damit dies nicht scheisse aussieht am besten in der ganzen App konsistent machen
@@ -13,11 +16,10 @@ public class Console {
         for (int i = 0; i < 25; i++) {
             outputString+= "\r\n";
         }
-        System.out.println(outputString);
+        outputWriter.println(outputString);
     }
     public void printPath() {
-        System.out.print(Command.getCurrentPath() + ">");
-
+        outputWriter.print(Command.getCurrentPath() + ">");
     }
     public void managePathInit() {
         String currentPath = System.getProperty("user.dir");
