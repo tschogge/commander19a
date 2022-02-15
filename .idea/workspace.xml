@@ -22,11 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30e30b78-eea5-4b67-a9b2-d1c88c456e11" name="Changes" comment="Version anfang">
-      <change afterPath="$PROJECT_DIR$/test/Command/VerCommandTest.java" afterDir="false" />
+    <list default="true" id="58cd08ac-f044-4f89-b1e7-d915fa77d91e" name="Changes" comment="Merge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/VerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/VerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Parser/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Parser/ParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Command/VerCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Command/VerCommandTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Command" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.VerCommandTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="commander19" />
@@ -59,6 +67,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VerCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commander19" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Command" />
+      <option name="MAIN_CLASS_NAME" value="Command.VerCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerCommandTest.displayAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commander19" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Command" />
+      <option name="MAIN_CLASS_NAME" value="Command.VerCommandTest" />
+      <option name="METHOD_NAME" value="displayAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerCommandTest.userName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commander19" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Command" />
+      <option name="MAIN_CLASS_NAME" value="Command.VerCommandTest" />
+      <option name="METHOD_NAME" value="userName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerCommandTest.versionNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commander19" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Command" />
+      <option name="MAIN_CLASS_NAME" value="Command.VerCommandTest" />
+      <option name="METHOD_NAME" value="versionNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.VerCommandTest" />
+        <item itemvalue="JUnit.VerCommandTest.displayAll" />
+        <item itemvalue="JUnit.VerCommandTest.userName" />
+        <item itemvalue="JUnit.VerCommandTest.versionNumber" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -6,13 +6,13 @@ package Parser;
 import Command.*;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Parser {
     /**
      * Validiert, ob der eingegebene String gültig ist
-     * @param entityString  Der ganze Command String
+     *
+     * @param entityString Der ganze Command String
      * @return boolean      True oder False
      */
     public boolean checkEntity(String entityString) {
@@ -21,7 +21,8 @@ public class Parser {
 
     /**
      * Überprüft, ob der Command existiert
-     * @param entitiyString     Der ganze Command String
+     *
+     * @param entitiyString Der ganze Command String
      * @return boolean          True oder false
      */
     public boolean commandFound(String entitiyString) {
@@ -34,7 +35,8 @@ public class Parser {
 
     /**
      * Überprüft, ob der Benutzer genug Parameter angegeben hat
-     * @param entityString      Der ganze Command String
+     *
+     * @param entityString Der ganze Command String
      * @return boolean          True oder false
      */
     public boolean enoughArguments(String entityString) {
@@ -55,8 +57,7 @@ public class Parser {
     }
 
     /**
-     *
-     * @param entityString  Der ganze Command String
+     * @param entityString Der ganze Command String
      * @return Eine Liste mit dem command und allen Parametern
      */
     public ArrayList<String> parseWhole(String entityString) {
@@ -65,7 +66,8 @@ public class Parser {
 
     /**
      * Gibt den Command zurück
-     * @param entityString  Der ganze Command String
+     *
+     * @param entityString Der ganze Command String
      * @return String       Der command als String
      */
     public String commandOnly(String entityString) {
@@ -74,7 +76,8 @@ public class Parser {
 
     /**
      * Überprüft alle Parameter und gibt sie zurück
-     * @param entityString  Der ganze Command String
+     *
+     * @param entityString Der ganze Command String
      * @return Array        Alle Parameter des Commands
      */
     public ArrayList<String> parseParameter(String entityString) {
