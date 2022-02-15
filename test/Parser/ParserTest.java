@@ -9,19 +9,6 @@ import org.junit.jupiter.api.*;
 class ParserTest {
     Parser parser = new Parser();
 
-   /* @Test
-    void checkEntity() {
-        //Test false
-        String testStringForCheck = "";
-        assertFalse(parser.checkEntity(testStringForCheck));
-
-        //Test true
-        testStringForCheck = "dir";
-        assertTrue(parser.checkEntity(testStringForCheck));
-    }
-    */
-    // Dieser test testet ob die Methode "equals" funktioniert, habe nun die validierung geändert also die methode gibt es nicht mehr
-
     @Test
     void parseWhole() {
         //Test 1

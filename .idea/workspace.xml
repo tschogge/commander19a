@@ -22,20 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e96de598-9d76-4d59-af34-e2741739d551" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_07__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_35__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" afterDir="false" />
+    <list default="true" id="58cd08ac-f044-4f89-b1e7-d915fa77d91e" name="Changes" comment="Merge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/CommandFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/CommandFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Console/CommandInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Console/CommandInvoker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Console/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Console/Console.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/commander19/Parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Parser/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/DirCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/DirCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/VerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/VerCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +50,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Command" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.VerCommandTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="commander19" />
@@ -69,6 +66,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VerCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commander19" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Command" />
+      <option name="MAIN_CLASS_NAME" value="Command.VerCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerCommandTest.displayAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commander19" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Command" />
+      <option name="MAIN_CLASS_NAME" value="Command.VerCommandTest" />
+      <option name="METHOD_NAME" value="displayAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerCommandTest.userName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commander19" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Command" />
+      <option name="MAIN_CLASS_NAME" value="Command.VerCommandTest" />
+      <option name="METHOD_NAME" value="userName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerCommandTest.versionNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commander19" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Command" />
+      <option name="MAIN_CLASS_NAME" value="Command.VerCommandTest" />
+      <option name="METHOD_NAME" value="versionNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.VerCommandTest" />
+        <item itemvalue="JUnit.VerCommandTest.displayAll" />
+        <item itemvalue="JUnit.VerCommandTest.userName" />
+        <item itemvalue="JUnit.VerCommandTest.versionNumber" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -107,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642690488991</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Merge">
+      <created>1644917682648</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644917682648</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,32 +207,10 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="readInput" />
-    <option name="LAST_COMMIT_MESSAGE" value="readInput" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="660" y="167" key="#com.intellij.ide.util.MemberChooser" timestamp="1643289647857">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="660" y="167" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1643289647857" />
-    <state width="1664" height="178" key="GridCell.Tab.0.bottom" timestamp="1643290329383">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="178" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1643290329383" />
-    <state width="1664" height="178" key="GridCell.Tab.0.center" timestamp="1643290329383">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="178" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1643290329383" />
-    <state width="1664" height="178" key="GridCell.Tab.0.left" timestamp="1643290329383">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="178" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1643290329383" />
-    <state width="1664" height="178" key="GridCell.Tab.0.right" timestamp="1643290329383">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="178" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1643290329383" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>
