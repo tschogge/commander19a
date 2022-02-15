@@ -1,7 +1,6 @@
 # Commander19a Repository
- lülülülül
-dis is ä täst
-kekekw
 
+Konsolenapplikation, die Commands ausführt
 
-g-<<üöä$
+### Colaborators
+Giotsche, Landrol, Lars, Loris, Raffi, Daniela
