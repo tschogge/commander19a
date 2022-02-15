@@ -32,7 +32,7 @@ public class ColorCommand extends Command {
     /**
      * Färbt den ausgegebenen Text nach der Farbe, die der Benutzer angegeben hat, wenn sie existiert
      *
-     * @param entryString Die Farbe, die der Benutzer im Command center eingegeben hat
+     * @param entryString Die Farbe, in der der Text angezeigt werden soll
      */
     public void changeColor(String entryString) {
         switch (entryString.toLowerCase()) {

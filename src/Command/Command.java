@@ -9,7 +9,9 @@ public abstract class Command {
     protected OutputWriter outputWriter;
     public static String currentPath;
 
-    public Command() {}
+    public Command() {
+    }
+
     public void execute() {
 
     }
@@ -39,7 +41,7 @@ public abstract class Command {
     }
 
     public int getRequiredArguments() {
-       return -1;
+        return -1;
     }
 
 }

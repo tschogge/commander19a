@@ -22,6 +22,7 @@ public class DirCommand extends Command {
             }
         }
     }
+
     @Override
     public int getRequiredArguments() {
         return requiredArguments;
