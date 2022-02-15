@@ -28,13 +28,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_14_48__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022_15_02__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/ClsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ClsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/TypeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/TypeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Console/CommandInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/CommandInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Console/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Console/ConsoleOutputWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/ConsoleOutputWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Console/OutputWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/OutputWriter.java" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Command/CommandFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Command/CommandFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Console/CommandInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Console/CommandInvoker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Console/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Console/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/commander19/Parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/commander19/Parser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/DirCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/DirCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +121,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
