@@ -1,17 +1,16 @@
+/**
+ * @author: Tschogge, Lars
+ * @version: 1.0
+ */
 package Command;
 
-import java.util.Locale;
-
 public class ColorCommand extends Command {
-
-
     public static int requiredArguments = 1;
 
 
     /**
      * ANSI Code
      * ANSI wird von der InteliJ Console unterstützt
-     *
      */
 
     public static final String ANSI_RESET = "\u001B[0m";
@@ -31,11 +30,13 @@ public class ColorCommand extends Command {
 
     private String errorMessage = "Your color does not exist";
 
-
-
-    public void changeColor(String entryString){
-
-        switch (entryString.toLowerCase()){
+    /**
+     * Färbt den ausgegebenen Text nach der Farbe, die der Benutzer angegeben hat, wenn sie existiert
+     *
+     * @param entryString Die Farbe, die der Benutzer im Command center eingegeben hat
+     */
+    public void changeColor(String entryString) {
+        switch (entryString.toLowerCase()) {
             case "black":
                 setChosenColor(ANSI_BLACK);
                 break;
@@ -68,10 +69,6 @@ public class ColorCommand extends Command {
     }
 
 
-
-
-
-
     public static String getChosenColor() {
         return chosenColor;
     }
@@ -83,9 +80,5 @@ public class ColorCommand extends Command {
 
     public static String getResetValue() {
         return resetValue;
-    }
-
-    public static void setResetValue(String resetValue) {
-        ColorCommand.resetValue = resetValue;
     }
 }
