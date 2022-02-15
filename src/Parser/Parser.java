@@ -1,9 +1,9 @@
 package Parser;
 
-import Command.ClsCommand;
-import Command.CommandFactory;
-import Command.ExitCommand;
-import Command.TypeCommand;
+
+//Erarbeitet von Tschogge und Lars
+
+import Command.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -46,6 +46,9 @@ public class Parser {
             return true;
         }
         if (commandOnly(entityString).equals("cls") && parseParameter(entityString).size() >= ClsCommand.requiredArguments) {
+            return true;
+        }
+        if (commandOnly(entityString).equals("dir") && parseParameter(entityString).size() >= DirCommand.requiredArguments) {
             return true;
         }
         return false;
