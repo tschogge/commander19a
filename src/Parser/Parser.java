@@ -1,7 +1,8 @@
+/**
+ * @author: Tschogge, Lars
+ * @version: 1.2
+ */
 package Parser;
-
-
-//Erarbeitet von Tschogge und Lars
 
 import Command.*;
 
@@ -13,7 +14,7 @@ public class Parser {
      * Validiert, ob der eingegebene String gültig ist
      *
      * @param entityString Der ganze Command String
-     * @return boolean      True oder False
+     * @return boolean: True oder False
      */
     public boolean checkEntity(String entityString) {
         return !entityString.equals("");
@@ -23,7 +24,7 @@ public class Parser {
      * Überprüft, ob der Command existiert
      *
      * @param entitiyString Der ganze Command String
-     * @return boolean          True oder false
+     * @return boolean: True oder false
      */
     public boolean commandFound(String entitiyString) {
         if (CommandFactory.createCommand(commandOnly(entitiyString)) == null) {
@@ -37,7 +38,7 @@ public class Parser {
      * Überprüft, ob der Benutzer genug Parameter angegeben hat
      *
      * @param entityString Der ganze Command String
-     * @return boolean          True oder false
+     * @return boolean: True oder false
      */
     public boolean enoughArguments(String entityString) {
         // Für jeden Command die required anzahl argumente hinzufügen
@@ -50,10 +51,7 @@ public class Parser {
         if (commandOnly(entityString).equals("cls") && parseParameter(entityString).size() >= ClsCommand.requiredArguments) {
             return true;
         }
-        if (commandOnly(entityString).equals("dir") && parseParameter(entityString).size() >= DirCommand.requiredArguments) {
-            return true;
-        }
-        return false;
+        return commandOnly(entityString).equals("dir") && parseParameter(entityString).size() >= DirCommand.requiredArguments;
     }
 
     /**
@@ -68,7 +66,7 @@ public class Parser {
      * Gibt den Command zurück
      *
      * @param entityString Der ganze Command String
-     * @return String       Der command als String
+     * @return String: Den command als String
      */
     public String commandOnly(String entityString) {
         return parseWhole(entityString).get(0).toLowerCase();
@@ -78,7 +76,7 @@ public class Parser {
      * Überprüft alle Parameter und gibt sie zurück
      *
      * @param entityString Der ganze Command String
-     * @return Array        Alle Parameter des Commands
+     * @return Array: Alle Parameter des Commands
      */
     public ArrayList<String> parseParameter(String entityString) {
         ArrayList<String> transferString = parseWhole(entityString);
