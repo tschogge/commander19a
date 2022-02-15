@@ -1,21 +1,24 @@
 package Console;
 
-import Console.OutputWriter;
+import org.junit.jupiter.api.*;
 
-public class TestOutputWriter implements OutputWriter {
+public class TestOutputWriter {
     public String output;
+
     public TestOutputWriter() {
         output = "";
     }
-    @Override
+
+    @Test
     public void print(String text) {
         output += text;
     }
 
-    @Override
+    @Test
     public void println(String text) {
         output += text;
     }
+
     public void flushOutputStream() {
         output = "";
     }

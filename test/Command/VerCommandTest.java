@@ -26,8 +26,9 @@ public class VerCommandTest {
 
     @Test
     void displayAll() {
+        verCommand.execute();
         assertEquals("System is running on:  " + System.getProperty("os.name") + " " + System.getProperty("os.arch") + "\n" +
                 "Application-Version: " + verCommand.getCurrentGeneralVersion() + " " + verCommand.getVersionNumber() + "\n" +
-                "Benutzer: " + System.getProperty("user.name"), verCommand.displayAll());
+                "Benutzer: " + System.getProperty("user.name"), verCommand.outputWriter.toString());
     }
 }
