@@ -1,7 +1,5 @@
 package Console;
 
-import org.junit.jupiter.api.*;
-
 public class TestOutputWriter implements OutputWriter{
     public String output;
 
@@ -9,12 +7,12 @@ public class TestOutputWriter implements OutputWriter{
         output = "";
     }
 
-    @Test
+    @Override
     public void print(String text) {
         output += text;
     }
 
-    @Test
+    @Override
     public void println(String text) {
         output += text;
     }
