@@ -61,6 +61,7 @@ public class ColorCommand extends Command {
                 setChosenColor(ANSI_WHITE);
                 break;
             default:
+                setChosenColor(ANSI_BLACK);
                 outputWriter.println(errorMessage);
 
         }
