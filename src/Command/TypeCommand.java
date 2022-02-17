@@ -16,6 +16,7 @@ public class TypeCommand extends Command {
     public TypeCommand() {
         console = Command.console;
     }
+
     @Override
     public void execute() {
         String output = "";
@@ -33,6 +34,7 @@ public class TypeCommand extends Command {
         outputWriter.println(file.getContent());
         outputWriter.println(output);
     }
+
     @Override
     public int getRequiredArguments() {
         return requiredArguments;

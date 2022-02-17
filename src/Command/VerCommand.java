@@ -33,15 +33,16 @@ public class VerCommand extends Command {
     }
 
     /**
-     * @return String: Alle Angaben über das System
+     * Gibt alle Daten des Systems aus
      */
-    public String displayAll() {
+    public void execute() {
         String versionName = versionName();
         String user = userName();
         String versionText = "Application-Version: ";
         String versionDisplayText = "System is running on: ";
         String userText = "Benutzer: ";
-        return (versionDisplayText + " " + versionName + "\n" + versionText + currentGeneralVersion + " " + versionNumber + "\n" + userText + user);
+        String wholeText = versionDisplayText + " " + versionName + "\n" + versionText + currentGeneralVersion + " " + versionNumber + "\n" + userText + user;
+        outputWriter.println(wholeText);
     }
 
     public String getVersionNumber() {
@@ -50,6 +51,10 @@ public class VerCommand extends Command {
 
     public String getCurrentGeneralVersion() {
         return currentGeneralVersion;
+    }
+
+    int getRequredArguments() {
+        return requiredArguments;
     }
 
 }
