@@ -17,6 +17,7 @@ public class Console {
         outputWriter = new ConsoleOutputWriter();
         filesystem = new Filesystem();
         currentDrive = filesystem.getMainDrive();
+        Command.console = this;
     }
 
     public void printStartSpaces() {
@@ -61,5 +62,21 @@ public class Console {
 
     public void setOutputWriter(OutputWriter outputWriter) {
         this.outputWriter = outputWriter;
+    }
+
+    public Filesystem getFilesystem() {
+        return filesystem;
+    }
+
+    public void setFilesystem(Filesystem filesystem) {
+        this.filesystem = filesystem;
+    }
+
+    public Drive getCurrentDrive() {
+        return currentDrive;
+    }
+
+    public void setCurrentDrive(Drive currentDrive) {
+        this.currentDrive = currentDrive;
     }
 }

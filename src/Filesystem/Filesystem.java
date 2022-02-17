@@ -4,8 +4,6 @@ import Services.PersistencyService;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Filesystem {
     private ArrayList<Drive> drives;
     private PersistencyService persistencyService;
@@ -18,17 +16,25 @@ public class Filesystem {
             rootDir.setFilesystemItems(new ArrayList<FilesystemItem>());
             rootDir.setName("\\");
             rootDir.setPath("C:");
-            rootDir.setParentDirectory(null);
             Drive driveC = new Drive();
             driveC.setName("base-drive");
-            driveC.setLabel("C");
+            driveC.setLabel("C:");
             driveC.setRootDirectory(rootDir);
             driveC.setCurrentDirectory(null);
             driveC.setSize(-1);
-            driveC.setFilesystemItems(new ArrayList<FilesystemItem>());
+            driveC.setCurrentDirectory(rootDir);
             drives.add(driveC);
+            // --- TESTZWECKE
+            Drive drive = getMainDrive();
+            File file = new File();
+            file.setName("testfile");
+            file.setPath(drive.getRootDirectory().getPath() + drive.getRootDirectory().getName());
+            file.setContent("Testerus maximus \n LULWWWW \n\n\n HéHéHéHéHüüöä");
+            drive.getRootDirectory().getFilesystemItems().add(file);
+            // --- TESTZWECKE
             save();
         }
+
     }
 
     public void save() {
@@ -40,7 +46,7 @@ public class Filesystem {
     public Drive getMainDrive() {
         Drive cDrive = new Drive();
         for (Drive drive : this.drives) {
-            if (drive.getLabel().equals("C")) {
+            if (drive.getLabel().equals("C:")) {
                 cDrive = drive;
             }
         }

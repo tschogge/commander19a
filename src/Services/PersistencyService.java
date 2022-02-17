@@ -43,4 +43,8 @@ public class PersistencyService {
             e.printStackTrace();
         }
     }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
 }
