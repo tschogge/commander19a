@@ -1,2 +1,8 @@
 #Dateien ignorieren
 /out
+
+/lib
+
+/.idea/libraries
+
+/.idea/workspace.xml
