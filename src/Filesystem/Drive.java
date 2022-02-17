@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Drive {
-    private ArrayList<FilesystemItem> filesystemItems;
+
     private String name;
     private String label;
     private Directory rootDirectory;
@@ -14,13 +14,6 @@ public class Drive {
 
     }
 
-    public ArrayList<FilesystemItem> getFilesystemItems() {
-        return filesystemItems;
-    }
-
-    public void setFilesystemItems(ArrayList<FilesystemItem> filesystemItems) {
-        this.filesystemItems = filesystemItems;
-    }
 
     public String getName() {
         return name;

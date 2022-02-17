@@ -36,6 +36,7 @@ public class CommandInvoker {
         command.setParameters(parser.parseParameter(userInput));
 
     }
+
     public void executeCommand() {
         if (!canExecute) {
             return;

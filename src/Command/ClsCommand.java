@@ -1,6 +1,6 @@
 package Command;
 
-public class ClsCommand extends Command{
+public class ClsCommand extends Command {
 
     public static int requiredArguments = 0;
 
@@ -12,10 +12,11 @@ public class ClsCommand extends Command{
     public void execute() {
         String outputString = "";
         for (int i = 0; i < 25; i++) {
-            outputString+= "\r\n";
+            outputString += "\r\n";
         }
         outputWriter.println(outputString);
     }
+
     @Override
     public int getRequiredArguments() {
         return requiredArguments;

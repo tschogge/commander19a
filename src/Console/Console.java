@@ -1,4 +1,5 @@
 package Console;
+
 import Command.Command;
 import Command.ExitCommand;
 import Filesystem.Drive;
@@ -6,6 +7,7 @@ import Filesystem.Filesystem;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+
 public class Console {
     private OutputWriter outputWriter;
     private Filesystem filesystem;
@@ -15,29 +17,34 @@ public class Console {
         outputWriter = new ConsoleOutputWriter();
         filesystem = new Filesystem();
         currentDrive = filesystem.getMainDrive();
+        Command.console = this;
     }
+
     public void printStartSpaces() {
         // Da man die Konsole nicht mit einem Command löschen kann muss man dies mit "New Lines" simulieren (siehe clsCommand-Klasse)
         // Damit dies nicht scheisse aussieht am besten in der ganzen App konsistent machen
         String outputString = "";
         for (int i = 0; i < 25; i++) {
-            outputString+= "\r\n";
+            outputString += "\r\n";
         }
         outputWriter.println(outputString);
     }
+
     public void printPath() {
         outputWriter.print(Command.getCurrentPath() + ">");
     }
+
     public void managePathInit() {
         Command.currentPath = currentDrive.getRootDirectory().getPath() + currentDrive.getRootDirectory().getName();
     }
-    public String readInput(){
+
+    public String readInput() {
         Scanner scanner = new Scanner(System.in);
         String userIput = scanner.nextLine();
         return userIput;
     }
 
-    public void start(){
+    public void start() {
         managePathInit();
         printStartSpaces();
         CommandInvoker commandInvoker;
@@ -55,5 +62,21 @@ public class Console {
 
     public void setOutputWriter(OutputWriter outputWriter) {
         this.outputWriter = outputWriter;
+    }
+
+    public Filesystem getFilesystem() {
+        return filesystem;
+    }
+
+    public void setFilesystem(Filesystem filesystem) {
+        this.filesystem = filesystem;
+    }
+
+    public Drive getCurrentDrive() {
+        return currentDrive;
+    }
+
+    public void setCurrentDrive(Drive currentDrive) {
+        this.currentDrive = currentDrive;
     }
 }
