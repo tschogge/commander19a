@@ -1,13 +1,21 @@
 package Console;
 
-public class ConsoleOutputWriter implements OutputWriter{
+import Command.*;
+
+public class ConsoleOutputWriter implements OutputWriter {
+
+    private String colorChosen= ColorCommand.getChosenColor();
+    private final String resetValue = ColorCommand.getResetValue();
+
     @Override
     public void print(String text) {
-        System.out.print(text);
+        colorChosen = ColorCommand.getChosenColor();
+        System.out.print(colorChosen + text + resetValue);
     }
 
     @Override
     public void println(String text) {
-        System.out.println(text);
+        colorChosen = ColorCommand.getChosenColor();
+        System.out.println(colorChosen + text + resetValue);
     }
 }

@@ -13,7 +13,9 @@ public abstract class Command {
     public static String currentPath;
     public static Console console;
 
-    public Command() {}
+    public Command() {
+    }
+
     public void execute() {
 
     }
@@ -43,7 +45,7 @@ public abstract class Command {
     }
 
     public int getRequiredArguments() {
-       return -1;
+        return -1;
     }
 
 }
