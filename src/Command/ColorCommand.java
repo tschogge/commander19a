@@ -28,6 +28,7 @@ public class ColorCommand extends Command {
     private static String resetValue = ANSI_RESET;
 
     private String errorMessage = "Your color does not exist";
+    private String colorList = "Black, red, green, yellow, blue, purple, cyan, white";
 
     /**
      * Färbt den ausgegebenen Text nach der Farbe, die der Benutzer angegeben hat, wenn sie existiert
@@ -62,6 +63,7 @@ public class ColorCommand extends Command {
                 break;
             default:
                 outputWriter.println(errorMessage);
+                outputWriter.println(colorList);
 
         }
 
@@ -80,4 +82,5 @@ public class ColorCommand extends Command {
     public static String getResetValue() {
         return resetValue;
     }
+
 }
