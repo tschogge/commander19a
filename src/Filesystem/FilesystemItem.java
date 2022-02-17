@@ -1,10 +1,20 @@
 package Filesystem;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
+@JsonTypeInfo(use = Id.CLASS,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "type")
+@JsonSubTypes({
+        @Type(value = Directory.class),
+        @Type(value = File.class),
+})
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class FilesystemItem {
     protected String name;
     protected String path;
-    protected Directory parentDirectory;
 
     public String getName() {
         return name;
@@ -22,11 +32,4 @@ public class FilesystemItem {
         this.path = path;
     }
 
-    public Directory getParentDirectory() {
-        return parentDirectory;
-    }
-
-    public void setParentDirectory(Directory parentDirectory) {
-        this.parentDirectory = parentDirectory;
-    }
 }
