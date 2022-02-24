@@ -32,4 +32,11 @@ public class FilesystemItem {
         this.path = path;
     }
 
+    public FilesystemItem(String name, String path) {
+        this.name = name;
+        this.path = path;
+    }
+    public FilesystemItem(){
+
+    }
 }

@@ -20,19 +20,18 @@ public class MkdirCommand extends Command{
 
     private String givenOverParameterName;
     private String currentDirectoryPath;
-    private Boolean wishedNameIsViableLength;
     private int counterForLoop = 0;
-    private Boolean wishedNameHasSpecialCharacters;
+    private String selfcreatedPath;
 
     private ArrayList<String> filesystemItemNames;
     private int arrayListOfNamesAmount;
 
-    private String errorForNotViableName = "The given name is not viable, please make it longer than 0 characters and without special characters";
-    private String errorForDirectoryWithNameFound = "The given name has already been found, please choose a new name and try again";
+    private String errNotViableName = "The given name is not viable, please make it longer than 0 characters and without special characters";
+    private String errDirFound = "The given name has already been found, please choose a new name and try again";
 
     /***
      * @filesystemItemNames in dieser ArrayList werden alle Namen der FilesystemItems gespeichert
-     * @givenOverParamterName is to be filled with the given paramtere in Command Line within the app
+     * @givenOverParamterName is to be filled with the given parameter in Command Line within the app
      * @currentDirectoryPath is used to find all directories within the current directories
      * @wishedNameIsViableLength is a boolean to check if the name which was given is viable
      */
@@ -46,7 +45,7 @@ public class MkdirCommand extends Command{
             boolean wishedNameHasSpecialCharacters = m.find();
 
             if(wishedNameHasSpecialCharacters){
-                outputWriter.println(errorForNotViableName);
+                outputWriter.println(errNotViableName);
                 return false;
 
             }
@@ -56,7 +55,7 @@ public class MkdirCommand extends Command{
         }else{
             //give error for no given Name
 
-            outputWriter.println(errorForNotViableName);
+            outputWriter.println(errNotViableName);
 
             return false;
         }
@@ -83,6 +82,7 @@ public class MkdirCommand extends Command{
 
             // if existing filesname matches with the wished directory name --> set true
             if(nameOfToBeCreatedDirectory.equals(filesystemItemNames.get(counter))){
+                outputWriter.println(errDirFound);
                 return true;
             }
         }
@@ -100,10 +100,15 @@ public class MkdirCommand extends Command{
         if(checkForExistingDirectory(givenOverParameterName) == false && validateInput(givenOverParameterName) == true){
             //create new Directory
 
+            selfcreatedPath = givenOverParameterName + "//";
+            FilesystemItem filesystemItem = new FilesystemItem(givenOverParameterName, selfcreatedPath);
 
-        }else{
-            //give message for error of already existing directory with the same name
-            outputWriter.println(errorForDirectoryWithNameFound);
+
+
+            Drive drive = new Drive();
+
+
+
         }
     }
 
