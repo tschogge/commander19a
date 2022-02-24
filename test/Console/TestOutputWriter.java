@@ -9,12 +9,11 @@ public class TestOutputWriter implements OutputWriter{
         output = "";
     }
 
-    @Test
+
     public void print(String text) {
         output += text;
     }
 
-    @Test
     public void println(String text) {
         output += text;
     }

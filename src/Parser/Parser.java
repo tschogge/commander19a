@@ -51,7 +51,16 @@ public class Parser {
         if (commandOnly(entityString).equals("cls") && parseParameter(entityString).size() >= ClsCommand.requiredArguments) {
             return true;
         }
-        return commandOnly(entityString).equals("dir") && parseParameter(entityString).size() >= DirCommand.requiredArguments;
+        if (commandOnly(entityString).equals("color") && parseParameter(entityString).size() >= ColorCommand.requiredArguments) {
+            return true;
+        }
+        if (commandOnly(entityString).equals("dir") && parseParameter(entityString).size() >= DirCommand.requiredArguments) {
+            return true;
+        }
+        if (commandOnly(entityString).equals("cd") && parseParameter(entityString).size() >= CdCommand.requiredArguments) {
+            return true;
+        }
+        return false;
     }
 
     /**
