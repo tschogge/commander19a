@@ -1,6 +1,7 @@
 package Command;
 
 import Filesystem.Drive;
+import Filesystem.File;
 import Filesystem.FilesystemItem;
 
 import java.util.ArrayList;
@@ -24,17 +25,22 @@ public class MkdirCommand extends Command{
     private String selfcreatedPath;
 
     private ArrayList<String> filesystemItemNames;
+    private ArrayList<FilesystemItem> curFileItem;
     private int arrayListOfNamesAmount;
 
     private String errNotViableName = "The given name is not viable, please make it longer than 0 characters and without special characters";
     private String errDirFound = "The given name has already been found, please choose a new name and try again";
 
     /***
+     * @givenOverParameterName is the name given from the user and will be given over to the class to start working
+     * @curFileItem is a list of all currently found items within the currentDirectory, its used to add the new created Dir and then give the whole List back
      * @filesystemItemNames in dieser ArrayList werden alle Namen der FilesystemItems gespeichert
      * @givenOverParamterName is to be filled with the given parameter in Command Line within the app
      * @currentDirectoryPath is used to find all directories within the current directories
-     * @wishedNameIsViableLength is a boolean to check if the name which was given is viable
-     */
+     *
+     * @errNotViableName will be display as soon as the given name is 0 or it has not allowed letters or characters within
+     * @errDirFound will be display as soon as the @givenOverParameterName is the same as an already existing FilesystemItem within the currentDirectory
+     * */
 
     public Boolean validateInput(String nameOfToBeCreatedDirectory){
         if(nameOfToBeCreatedDirectory.length() > 0){
@@ -94,20 +100,29 @@ public class MkdirCommand extends Command{
 
     }
 
-    public void createNewDirectory(String givenOverParameterName){
+    //The methode to be called up outside of the class with the given name
+    public void execute(String givenOverParameterName){
 
 
         if(checkForExistingDirectory(givenOverParameterName) == false && validateInput(givenOverParameterName) == true){
             //create new Directory
 
             selfcreatedPath = givenOverParameterName + "//";
-            FilesystemItem filesystemItem = new FilesystemItem(givenOverParameterName, selfcreatedPath);
+            FilesystemItem filesystemItemToBeAdded = new FilesystemItem(givenOverParameterName, selfcreatedPath);
 
 
 
             Drive drive = new Drive();
 
+            for(FilesystemItem filesystemItem : drive.getCurrentDirectory().getFilesystemItems()){
 
+                curFileItem.add(filesystemItem);
+
+            }
+
+            curFileItem.add(filesystemItemToBeAdded);
+
+            drive.getCurrentDirectory().setFilesystemItems(curFileItem);
 
         }
     }
