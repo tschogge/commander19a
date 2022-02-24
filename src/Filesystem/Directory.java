@@ -1,6 +1,8 @@
 package Filesystem;
 
 import java.util.ArrayList;
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Directory extends FilesystemItem {
@@ -9,7 +11,7 @@ public class Directory extends FilesystemItem {
 
     }
 
-    public ArrayList<FilesystemItem> getFilesystemItems() {
+    public List<FilesystemItem> getFilesystemItems() {
         return filesystemItems;
     }
 
