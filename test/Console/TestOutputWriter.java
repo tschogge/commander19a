@@ -7,12 +7,11 @@ public class TestOutputWriter implements OutputWriter{
         output = "";
     }
 
-    @Override
     public void print(String text) {
         output += text;
     }
 
-    @Override
+
     public void println(String text) {
         output += text;
     }

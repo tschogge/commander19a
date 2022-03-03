@@ -11,28 +11,29 @@ public class CommandFactory {
         switch (commandName) {
             case "exit":
                 command = new ExitCommand();
-                command.setOutputWriter(outputWriter);
                 break;
             case "cls":
                 command = new ClsCommand();
-                command.setOutputWriter(outputWriter);
                 break;
             case "ver":
                 command = new VerCommand();
-                command.setOutputWriter(outputWriter);
                 break;
             case "color":
                 command = new ColorCommand();
-                command.setOutputWriter(outputWriter);
                 break;
             case "dir":
                 command = new DirCommand();
-                command.setOutputWriter(outputWriter);
                 break;
             case "type":
                 command = new TypeCommand();
-                command.setOutputWriter(outputWriter);
+                break;
+            case "cd":
+                command = new CdCommand();
+                break;
+            default:
+                return command;
         }
+        command.setOutputWriter(outputWriter);
         return command;
     }
 }

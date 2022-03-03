@@ -5,7 +5,7 @@
 package Command;
 
 public class ColorCommand extends Command {
-    public static int requiredArguments = 1;
+    public static int requiredArguments = 0;
 
     /**
      * ANSI Code Farben
@@ -36,7 +36,8 @@ public class ColorCommand extends Command {
      */
     public void changeColor(String entryString) {
         switch (entryString.toLowerCase()) {
-            case "black":
+            case "default":
+            case "":
                 setChosenColor(ANSI_BLACK);
                 break;
             case "red":
@@ -80,5 +81,20 @@ public class ColorCommand extends Command {
 
     public static String getResetValue() {
         return resetValue;
+    }
+    @Override
+    public int getRequiredArguments() {
+        return requiredArguments;
+    }
+
+    @Override
+    public void execute() {
+        if (parameters.size() > 0) {
+            changeColor(parameters.get(0));
+            return;
+        }
+        // Wenn keine argumente gegeben wurden
+        changeColor("");
+
     }
 }
