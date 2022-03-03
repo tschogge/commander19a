@@ -3,9 +3,27 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8baf91d6-75a6-40f5-a781-6a9868a88ece" name="Changes" comment="Ergowan">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="8baf91d6-75a6-40f5-a781-6a9868a88ece" name="Changes" comment="cd (ohne tests)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +79,14 @@
       <recent name="Command" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ColorCommandTest.changeColorInvalid">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="commander19a" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ColorCommandTest.changeColorBlue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="commander19" />
       <extension name="coverage">
@@ -126,29 +151,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOutputWriter.print" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="commander19" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Console.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Console" />
-      <option name="MAIN_CLASS_NAME" value="Console.TestOutputWriter" />
-      <option name="METHOD_NAME" value="print(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ColorCommandTest.changeColorInvalid" />
         <item itemvalue="JUnit.ColorCommandTest.changeColorRed" />
         <item itemvalue="JUnit.ColorCommandTest.changeColorBlue" />
         <item itemvalue="JUnit.ColorCommandTest.getChosenColor" />
-        <item itemvalue="JUnit.TestOutputWriter.print" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645103217030</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="cd (ohne tests)">
+      <created>1645715845964</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1645715845964</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +285,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -278,6 +295,41 @@
     <MESSAGE value="Farben" />
     <MESSAGE value="Tests" />
     <MESSAGE value="Ergowan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ergowan" />
+    <MESSAGE value="cd (ohne tests)" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd (ohne tests)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1664" height="197" key="GridCell.Tab.0.bottom" timestamp="1645715928839">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="197" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1645715928839" />
+    <state width="1664" height="197" key="GridCell.Tab.0.center" timestamp="1645715928839">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="197" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1645715928839" />
+    <state width="1664" height="197" key="GridCell.Tab.0.left" timestamp="1645715928839">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="197" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1645715928839" />
+    <state width="1664" height="197" key="GridCell.Tab.0.right" timestamp="1645715928839">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="197" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1645715928839" />
+    <state width="1664" height="197" key="GridCell.Tab.1.bottom" timestamp="1645715928839">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="197" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1645715928839" />
+    <state width="1664" height="197" key="GridCell.Tab.1.center" timestamp="1645715928839">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="197" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1645715928839" />
+    <state width="1664" height="197" key="GridCell.Tab.1.left" timestamp="1645715928839">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="197" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1645715928839" />
+    <state width="1664" height="197" key="GridCell.Tab.1.right" timestamp="1645715928839">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="197" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1645715928839" />
   </component>
 </project>
