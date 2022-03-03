@@ -76,8 +76,6 @@ public class MkdirCommand extends Command{
 
         Drive drive = new Drive();
 
-        currentDirectoryPath = drive.getCurrentDirectory().getPath();
-
         for(FilesystemItem filesystemItem : drive.getCurrentDirectory().getFilesystemItems()){
 
             filesystemItemNames.add(filesystemItem.getName());
