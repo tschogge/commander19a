@@ -41,6 +41,7 @@ class ColorCommandTest {
 
     @Test
     void changeColorInvalid() {
+        colorCommand.changeColor("");
         colorCommand.setOutputWriter(outputWriter);
         System.setOut(new PrintStream(outputStream));
         colorCommand.changeColor("err");

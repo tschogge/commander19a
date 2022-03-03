@@ -31,6 +31,24 @@ public class Filesystem {
             file.setPath(drive.getRootDirectory().getPath() + drive.getRootDirectory().getName());
             file.setContent("Testerus maximus \n LULWWWW \n\n\n HéHéHéHéHüüöä");
             drive.getRootDirectory().getFilesystemItems().add(file);
+            // directory
+            Directory directory = new Directory();
+            directory.setFilesystemItems(new ArrayList<FilesystemItem>());
+            directory.setName("kek\\");
+            directory.setPath(drive.getRootDirectory().getPath() + drive.getRootDirectory().getName());
+            drive.getRootDirectory().getFilesystemItems().add(directory);
+            //  directory 2
+            Directory directory2 = new Directory();
+            directory2.setFilesystemItems(new ArrayList<FilesystemItem>());
+            directory2.setName("monsieur\\");
+            directory2.setPath(directory.getPath() + directory.getName());
+            directory.getFilesystemItems().add(directory2);
+            // directory 3
+            Directory directory3 = new Directory();
+            directory3.setFilesystemItems(new ArrayList<FilesystemItem>());
+            directory3.setName("raffmael\\");
+            directory3.setPath(directory2.getPath() + directory2.getName());
+            directory2.getFilesystemItems().add(directory3);
             // --- TESTZWECKE
             save();
         }

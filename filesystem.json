@@ -1,0 +1,59 @@
+[ {
+  "name" : "base-drive",
+  "label" : "C:",
+  "rootDirectory" : {
+    "type" : "Filesystem.Directory",
+    "name" : "\\",
+    "path" : "C:",
+    "filesystemItems" : [ {
+      "type" : "Filesystem.File",
+      "name" : "testfile",
+      "path" : "C:\\",
+      "content" : "Testerus maximus \n LULWWWW \n\n\n HéHéHéHéHüüöä",
+      "size" : 44
+    }, {
+      "type" : "Filesystem.Directory",
+      "name" : "kek\\",
+      "path" : "C:\\",
+      "filesystemItems" : [ {
+        "type" : "Filesystem.Directory",
+        "name" : "monsieur\\",
+        "path" : "C:\\kek\\",
+        "filesystemItems" : [ {
+          "type" : "Filesystem.Directory",
+          "name" : "raffmael\\",
+          "path" : "C:\\kek\\monsieur\\",
+          "filesystemItems" : [ ]
+        } ]
+      } ]
+    } ]
+  },
+  "currentDirectory" : {
+    "type" : "Filesystem.Directory",
+    "name" : "\\",
+    "path" : "C:",
+    "filesystemItems" : [ {
+      "type" : "Filesystem.File",
+      "name" : "testfile",
+      "path" : "C:\\",
+      "content" : "Testerus maximus \n LULWWWW \n\n\n HéHéHéHéHüüöä",
+      "size" : 44
+    }, {
+      "type" : "Filesystem.Directory",
+      "name" : "kek\\",
+      "path" : "C:\\",
+      "filesystemItems" : [ {
+        "type" : "Filesystem.Directory",
+        "name" : "monsieur\\",
+        "path" : "C:\\kek\\",
+        "filesystemItems" : [ {
+          "type" : "Filesystem.Directory",
+          "name" : "raffmael\\",
+          "path" : "C:\\kek\\monsieur\\",
+          "filesystemItems" : [ ]
+        } ]
+      } ]
+    } ]
+  },
+  "size" : -1
+} ]

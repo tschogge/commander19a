@@ -4,7 +4,7 @@ import Command.*;
 
 public class ConsoleOutputWriter implements OutputWriter {
 
-    private String colorChosen= ColorCommand.getChosenColor();
+    private String colorChosen = ColorCommand.getChosenColor();
     private final String resetValue = ColorCommand.getResetValue();
 
     @Override
