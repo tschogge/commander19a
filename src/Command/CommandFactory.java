@@ -32,6 +32,11 @@ public class CommandFactory {
             case "type":
                 command = new TypeCommand();
                 command.setOutputWriter(outputWriter);
+                break;
+            case "mkdir":
+                command = new MkdirCommand();
+                command.setOutputWriter(outputWriter);
+                break;
         }
         return command;
     }

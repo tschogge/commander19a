@@ -8,12 +8,11 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MkdirCommand extends Command{
+public class MkdirCommand extends Command {
 
-    public MkdirCommand(){
+    public MkdirCommand() {
 
     }
-
 
 
     public static int requiredArguments = 1;
@@ -45,15 +44,15 @@ public class MkdirCommand extends Command{
      * @errDirFound will be display as soon as the @givenOverParameterName is the same as an already existing FilesystemItem within the currentDirectory
      * */
 
-    public Boolean validateInput(String nameOfToBeCreatedDirectory){
-        if(nameOfToBeCreatedDirectory.length() > 0){
+    public Boolean validateInput(String nameOfToBeCreatedDirectory) {
+        if (nameOfToBeCreatedDirectory.length() > 0) {
 
 
             Pattern p = Pattern.compile("[^a-z0-9 ]", Pattern.CASE_INSENSITIVE);
             Matcher m = p.matcher(nameOfToBeCreatedDirectory);
             wishedNameHasSpecialCharacters = m.find();
 
-            if(wishedNameHasSpecialCharacters){
+            if (wishedNameHasSpecialCharacters) {
                 outputWriter.println(errNotViableName);
                 return false;
 
@@ -61,7 +60,7 @@ public class MkdirCommand extends Command{
 
             return true;
 
-        }else{
+        } else {
             //give error for no given Name
 
             outputWriter.println(errNotViableName);
@@ -71,14 +70,14 @@ public class MkdirCommand extends Command{
 
     }
 
-    public boolean checkForExistingDirectory(String nameOfToBeCreatedDirectory){
+    public boolean checkForExistingDirectory(String nameOfToBeCreatedDirectory) {
 
 
         Drive drive = new Drive();
 
         currentDirectoryPath = drive.getCurrentDirectory().getPath();
 
-        for(FilesystemItem filesystemItem : drive.getCurrentDirectory().getFilesystemItems()){
+        for (FilesystemItem filesystemItem : drive.getCurrentDirectory().getFilesystemItems()) {
 
             filesystemItemNames.add(filesystemItem.getName());
             counterForLoop++;
@@ -86,11 +85,11 @@ public class MkdirCommand extends Command{
 
         arrayListOfNamesAmount = filesystemItemNames.size();
 
-        for(int counter = 0; counter < arrayListOfNamesAmount; counter++){
+        for (int counter = 0; counter < arrayListOfNamesAmount; counter++) {
 
 
             // if existing filesname matches with the wished directory name --> set true
-            if(nameOfToBeCreatedDirectory.equals(filesystemItemNames.get(counter))){
+            if (nameOfToBeCreatedDirectory.equals(filesystemItemNames.get(counter))) {
                 outputWriter.println(errDirFound);
                 return true;
             }
@@ -100,25 +99,23 @@ public class MkdirCommand extends Command{
         return false;
 
 
-
     }
 
     //The methode to be called up outside of the class with the given name
 
-    public void execute(String givenOverParameterName){
+    public void execute(String givenOverParameterName) {
 
 
-        if(checkForExistingDirectory(givenOverParameterName) == false && validateInput(givenOverParameterName) == true){
+        if (checkForExistingDirectory(givenOverParameterName) == false && validateInput(givenOverParameterName) == true) {
             //create new Directory
 
             selfcreatedPath = givenOverParameterName + "//";
             FilesystemItem filesystemItemToBeAdded = new FilesystemItem(givenOverParameterName, selfcreatedPath);
 
 
-
             Drive drive = new Drive();
 
-            for(FilesystemItem filesystemItem : drive.getCurrentDirectory().getFilesystemItems()){
+            for (FilesystemItem filesystemItem : drive.getCurrentDirectory().getFilesystemItems()) {
 
                 curFileItem.add(filesystemItem);
 

@@ -51,6 +51,9 @@ public class Parser {
         if (commandOnly(entityString).equals("cls") && parseParameter(entityString).size() >= ClsCommand.requiredArguments) {
             return true;
         }
+        if (commandOnly(entityString).equals("mkdir") && parseParameter(entityString).size() >= MkdirCommand.requiredArguments) {
+            return true;
+        }
         return commandOnly(entityString).equals("dir") && parseParameter(entityString).size() >= DirCommand.requiredArguments;
     }
 
