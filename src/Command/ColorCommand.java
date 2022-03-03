@@ -82,6 +82,7 @@ public class ColorCommand extends Command {
     public static String getResetValue() {
         return resetValue;
     }
+
     @Override
     public int getRequiredArguments() {
         return requiredArguments;
