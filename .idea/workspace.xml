@@ -22,8 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8baf91d6-75a6-40f5-a781-6a9868a88ece" name="Changes" comment="gitignore">
+    <list default="true" id="23ce86d7-1a10-4d40-881c-5e600885024c" name="Changes" comment="gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/ColorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ColorCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Tschogge&amp;Larse" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -151,17 +157,6 @@
       <option name="MAIN_CLASS_NAME" value="Command.ColorCommandTest" />
       <option name="METHOD_NAME" value="getChosenColor" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
