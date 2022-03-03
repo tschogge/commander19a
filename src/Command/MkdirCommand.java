@@ -9,6 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MkdirCommand extends Command{
+
     public MkdirCommand(){
 
     }
@@ -24,6 +25,8 @@ public class MkdirCommand extends Command{
     private int counterForLoop = 0;
     private String selfcreatedPath;
 
+    private Boolean wishedNameHasSpecialCharacters = false;
+
     private ArrayList<String> filesystemItemNames;
     private ArrayList<FilesystemItem> curFileItem;
     private int arrayListOfNamesAmount;
@@ -34,7 +37,7 @@ public class MkdirCommand extends Command{
     /***
      * @givenOverParameterName is the name given from the user and will be given over to the class to start working
      * @curFileItem is a list of all currently found items within the currentDirectory, its used to add the new created Dir and then give the whole List back
-     * @filesystemItemNames in dieser ArrayList werden alle Namen der FilesystemItems gespeichert
+     * @filesystemItemNames in this ArrayList all names of FilesystemItems will be saved
      * @givenOverParamterName is to be filled with the given parameter in Command Line within the app
      * @currentDirectoryPath is used to find all directories within the current directories
      *
@@ -48,7 +51,7 @@ public class MkdirCommand extends Command{
 
             Pattern p = Pattern.compile("[^a-z0-9 ]", Pattern.CASE_INSENSITIVE);
             Matcher m = p.matcher(nameOfToBeCreatedDirectory);
-            boolean wishedNameHasSpecialCharacters = m.find();
+            wishedNameHasSpecialCharacters = m.find();
 
             if(wishedNameHasSpecialCharacters){
                 outputWriter.println(errNotViableName);
@@ -101,6 +104,7 @@ public class MkdirCommand extends Command{
     }
 
     //The methode to be called up outside of the class with the given name
+
     public void execute(String givenOverParameterName){
 
 
