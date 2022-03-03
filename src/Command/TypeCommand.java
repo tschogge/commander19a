@@ -15,6 +15,7 @@ public class TypeCommand extends Command {
     private Console console;
     public TypeCommand() {
         console = Command.console;
+
     }
 
     @Override
